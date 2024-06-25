@@ -1,0 +1,171 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: url("./assets/images/trek1.jpg") no-repeat center center fixed; 
+  background-size:cover;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#Home, #about, #services, #contact {
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  box-shadow:0px 0px 30px rgba(227, 228, 237, 0.40);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  height: 33rem;
+  width: 100%;
+}
+
+#home h3 {
+  margin-top: 0;
+}
+#body {
+  text-align: justify;
+}
+#services {
+  min-width: 58rem;
+}
+#sertex{
+  position: relative;
+  top: 0;
+}
+#card{
+  width: 15rem;
+  height: 15rem;
+}
+
+.hm {
+  background-color: lightblue;
+  backdrop-filter: blur(30px);
+}
+
+@media screen and (max-width: 950px) {
+    #trekname{
+      padding-top: 30px;
+    }
+    #Home {
+      height: 40rem;
+    }
+    #body {
+      font-weight: 700;
+    }
+    #about {
+      margin-top: 5rem;
+    }
+    /* #services {
+      width: 90%;
+      height: "200rem";
+      padding: 20px;
+    }
+    .griditem{
+      max-height: 500px;
+      max-width: 200em;
+      padding: 10px;
+    } */
+    #services {
+      height: 35rem;
+      margin-top: 80px;
+    }
+    #sertex {
+      margin-top: 20px;
+    }
+    .gridbox {
+      justify-content: center;
+    }
+}
+
+/* @media screen and (max-width : 900px) {
+  #services {
+    height: 60rem;
+    margin-top: 80px;
+  }
+  #sertex {
+    margin-top: 20px;
+  }
+  .gridbox {
+    justify-content: center;
+  }
+} */
+@media screen and (max-width: 640px) {
+    #trekname{
+      padding-top: 50px;
+    }
+    #about {
+      margin-top: 5rem;
+      height: 50rem;
+    }
+    #services {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+    }
+}
+@media screen and (max-width: 496px) {
+    #Home {
+      margin-top: 5rem;
+      height: 60rem;
+    }
+    #homeimg{
+      height: 40rem;
+    }
+    #about {
+      margin-top: 5rem;
+      height: 50rem;
+    }
+    #homecard{
+      height: 250px;
+    }
+    #services {
+      /* width: 90%;
+      height: auto; */
+      padding: 20px;
+    }
+}

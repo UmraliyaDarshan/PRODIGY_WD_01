@@ -1,0 +1,199 @@
+/* .navbar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    padding: 1rem;
+    box-shadow: none;
+  }
+  
+  .navbar-scroll {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f39c12;
+  }
+   */
+
+   /* src/Navbar.css */
+
+/* Reset some default styles */
+/* body, h1, p, ul {
+  margin: 0;
+  padding: 0;
+  background-color:black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37) ;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 0.3s ease;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+section {
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+#home { background: lightgray; }
+#about { background: lightcoral; }
+#services { background: lightblue; }
+#contact { background: lightgreen; } */
+
+
+/* src/Navbar.css */
+
+/* Reset some default styles */
+body, h1, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+/* Navigation bar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37) ;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+/* Hamburger menu styles */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-list.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-item {
+  margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-list {
+      display: none;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+}
+
+/* Section styles for testing */
+section {
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+#home { background: lightgray; }
+#about { background: lightcoral; }
+#services { background: lightblue; }
+#contact { background: lightgreen; }
